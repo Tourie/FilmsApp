@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="btn-group" role="group" aria-label="Basic example" style="margin: 10px;">
+        <button class="btn btn-secondary" (click)="toList()">Лист</button>
+        <button class="btn btn-secondary" (click)="toCard()">Карточка</button>
+    </div>
+    <a routerLink="create" class="btn btn-success" style="margin-left: 20px;">Добавить фильм</a>
+    <app-film-item
+    *ngFor="let filmItem of films"
+    [film] = "filmItem"
+    [type] = "type">
+    </app-film-item>
+</div>

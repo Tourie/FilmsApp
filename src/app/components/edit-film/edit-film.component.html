@@ -1,0 +1,15 @@
+<div class="container" style="padding: 20px 0px;">
+    <h4>Название фильма:</h4> 
+    <input name="title" [(ngModel)]="film.title">
+    <h4>Год выпуска:</h4> 
+    <input name="release_date" type="number" [(ngModel)]="film.release_date">
+    <h4>Описание:</h4> 
+    <!-- <input name="description" type="text" [(ngModel)]="film.description"> -->
+    <textarea name="description" type="text" [(ngModel)]="film.description" cols="100" rows="10"></textarea>
+    <h4>Url-картинки:</h4> 
+    <input name="img_src" type="text" [(ngModel)]="film.img_src">
+    <div class="button_group" style="margin-top: 10px;">
+        <button (click)="setChanges()" class="btn btn-danger">Обновить</button>
+        <a [routerLink]="['/films', id]" class="btn btn-primary" style="margin-left: 10px;">Назад к фильму</a>
+    </div>
+</div>

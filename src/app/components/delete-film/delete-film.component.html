@@ -1,0 +1,7 @@
+<div class="container" style="padding: 20px 0px;">
+    <h1>Вы действительно хотите удалить фильм?</h1>
+    <div class="button_group" style="margin-top: 10px;">
+        <button (click)="deleteFilm()" class="btn btn-danger">Удалить</button>
+        <a [routerLink]="['/films', id]" class="btn btn-primary" style="margin-left: 10px;">Назад к фильму</a>
+    </div>
+</div>

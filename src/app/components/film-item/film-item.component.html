@@ -1,0 +1,28 @@
+<div [ngSwitch]="type">
+    <ng-template ngSwitchCase="list">
+        <div class="card" style="padding: 20px;">
+          <div class="list_img">
+            <img src={{film.img_src}} class="card-img-top" alt="...">
+          </div>
+          <div class="list_content">
+            <h5 class="card-title">{{film.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Год выпуска: {{film.release_date}}</h6>
+            <p class="card-text clip">Описание: {{film.description}}</p>
+            <a routerLink={{film.id}} class="btn btn-primary" style="float: left;">Подробнее</a>
+          </div>
+        </div>
+    </ng-template>
+    <ng-template ngSwitchCase="card" style="float: left;">
+        <div class="card" style="width: 18rem; float: left;">
+          <div class="card_img">
+            <img src={{film.img_src}} class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">{{film.title}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Год выпуска: {{film.release_date}}</h6>
+              <p class="card-text clip">Описание: {{film.description}}</p>
+              <a routerLink={{film.id}} class="btn btn-primary">Подробнее</a>
+            </div>
+          </div>
+    </ng-template>
+</div>

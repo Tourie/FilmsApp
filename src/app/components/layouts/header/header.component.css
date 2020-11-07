@@ -1,0 +1,11 @@
+.header {
+    background: lightslategray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.navigation a {
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+<div class="container" style="padding: 20px 0px;">
+    <div class="img_film">
+        <img src={{film.img_src}}>
+    </div>
+    <div class="film_content">
+        <h2>{{film.title}}</h2>
+        <p>{{film.release_date}}г.</p>
+        <h6>Описание: </h6><p>{{film.description}}</p> 
+        <a routerLink="edit" class="btn btn-primary" style="margin-right: 15px;">Редактировать</a>
+        <a routerLink="delete" class="btn btn-danger">Удалить</a>
+    </div>
+</div>
